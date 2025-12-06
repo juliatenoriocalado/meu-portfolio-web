@@ -13,9 +13,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
+
+    <button id="toggle-theme">🌓 Alternar tema</button>
+
     <div class="container">
         
         <h1>PROJETOS ACADÊMICOS</h1>
@@ -87,7 +91,54 @@
                 </a>
             </div>
         </section>
+        <section>
+            <h3>Projetos em Python – Matemática Computacional</h3>
+            <h4>Método da Bisseção</h4>
+            <p>
+                Este projeto calcula <b>raízes de funções</b> usando o <strong>método da bisseção</strong>, um <i>algoritmo numérico</i> que aproxima soluções de equações.
+                 O usuário fornece a função e o intervalo, e o programa retorna a raiz aproximada. Este projeto me permitiu consolidar conceitos de algoritmos, lógica de programação e métodos numéricos. E, também foi realizado utilizando trabalho em equipe!
+            </p>
+            <div class="links">
+                <a class="link-box roxo"
+                    href="https://github.com/LarissaGiovanna/math" target="_blank">
+                          Acesse agora o repositório no GitHub!
+                </a>
+                <p>
+                    <h4>Cálculo de Integrais com Gráfico</h4>
+                </p>
+                    <p>
+                    Neste projeto, o usuário fornece pontos de uma função, a quantidade de pares ordenados fica à seu critério, e o programa calcula a aproximação da integral usando esses pontos, além de gerar um gráfico visualizando os pontos e a curva.
+                    Aprendi a trabalhar com visualização de dados e <i>bibliotecas gráficas</i> em Python. Ademais, no repositório também estão disponíveis outros projetos de matemática feitos em grupo!
+                    </p>
+            </div>
+                <div class="imagem-projeto">
+                    <img src="imagens/bicessao.jpg" alt="Método da Bicessão Trecho" class="img-projeto">
+                    <img src="imagens/integral.png" alt="Cálculo Integral + Grágico" class="img-projeto">
+                </div>            
+        </section>
+        <p>
+            Estes foram meus principais projetos durante esse primeiro período, e tenho certeza que os próximos que virão serão cada vez mais enriquecedores.
+        </p>
+        <p>
+            <b>Agora, que tal conhecer um pouco das minhas competências e descobrir outras conquistas que adquiri?</b>
+        </p>
+        <section class="links">
+            <a class="link-box" href="pagina2.html">Clica aqui!</a>
+        </section>
 
     </div>
+    ...
+    </div> <!-- fecha container -->
+
+    <script>
+        const toggleThemeBtn = document.getElementById('toggle-theme');
+
+        toggleThemeBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+    </body>
+    </html>
+
 </body>
 </html>
