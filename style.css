@@ -1,3 +1,18 @@
+. .container {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 20 px;
+    text-align: center;
+}
+.container p {
+    text-align: justify;
+}
+.linha{
+    border: none;
+    height: 2px;
+    background-color: var(--cor-linha);
+    margin: 20px 0;
+}
 body {
     margin: 0;
     padding: 0;
@@ -54,6 +69,9 @@ a:hover {
 .laranja {
     color: #884d00;
 }
+.vermelho {
+    color: #ff1e1e;
+}
 body.dark-mode .laranja {
     color: #ff8400;
 }
@@ -76,6 +94,31 @@ body.dark-mode .azul {
     background-color: rgba(0, 0, 0, 0.05);
     transition: 0.03s;
     font-weight: 600;
+}
+.imagem-projeto {        /* Container */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;     /* Faz com que quebre para a próxima linha se a tela for pequena */
+    margin: 20px 0;
+}
+
+.img-projeto {           /* Cada imagem */
+    width: 45%;          /* Ajuste o tamanho como quiser */
+    max-width: 400px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.imagens-projeto {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.imagens-projeto img {
+    width: 300px;
+    border-radius: 12px;
 }
 .link-box:hover {
     background-color: rgba(0, 0, 0, 0.15);
@@ -102,3 +145,4 @@ body.dark-mode #toggle-theme {
     background-color: #333;
     color: white;
 }
+
